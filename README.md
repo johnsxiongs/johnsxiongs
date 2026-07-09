@@ -32,6 +32,15 @@ QuantAI is research software. It is not a broker, an automated trading bot, or p
 - Web and iPhone product experiences for self-directed research
 - Subscription, onboarding, and production deployment systems
 
+## Technical Strengths
+
+- AI agents and research workflows: LangGraph, LangChain, tool calling, streaming responses, tracing, and evaluation
+- Backend product systems: Python, FastAPI, SQLAlchemy, SQLModel, Pydantic, PostgreSQL, TimescaleDB, Redis
+- Web apps: Vue 3, TypeScript, Vite, Pinia, Vue Router, Naive UI, Tailwind CSS
+- iPhone apps: Swift, SwiftUI, app state, subscription flows, and App Store release work
+- Product infrastructure: Docker Compose, Traefik, Supabase, Stripe, RevenueCat, Cloudflare, GitHub Actions
+- Market data products: stock research, crypto research, filings, watchlists, signals, and thesis review
+
 ## How I Work
 
 I like products that make messy decisions calmer. My current work combines AI agents, financial data, full-stack product engineering, and mobile user experience.
