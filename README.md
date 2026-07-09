@@ -38,6 +38,10 @@ I like products that make messy decisions calmer. My current work combines AI ag
 
 The technical stack matters, but the goal is simpler: help people ask better questions before they act on a market view.
 
+## GitHub Activity
+
+![GitHub Contribution Graph](https://ghchart.rshah.org/johnsxiongs)
+
 ## Connect
 
 - GitHub: [github.com/johnsxiongs](https://github.com/johnsxiongs)
