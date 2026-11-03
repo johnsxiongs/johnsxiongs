@@ -6,12 +6,12 @@
     </linearGradient>
   </defs>
   <rect x="0.5" y="0.5" width="1199" height="299" rx="24" fill="#1A1814" stroke="#2C2822"/>
-  <line x1="700" y1="80" x2="1140" y2="80" stroke="#2A2620" stroke-width="1"/><line x1="700" y1="130" x2="1140" y2="130" stroke="#2A2620" stroke-width="1"/><line x1="700" y1="180" x2="1140" y2="180" stroke="#2A2620" stroke-width="1"/><line x1="700" y1="230" x2="1140" y2="230" stroke="#2A2620" stroke-width="1"/>
+  <line x1="700" y1="80" x2="1140" y2="80" stroke="#2A2620"/><line x1="700" y1="130" x2="1140" y2="130" stroke="#2A2620"/><line x1="700" y1="180" x2="1140" y2="180" stroke="#2A2620"/><line x1="700" y1="230" x2="1140" y2="230" stroke="#2A2620"/>
   <path d="M720,232 L739.5,226 L759,230 L778.5,218 L798,222 L817.5,209 L837,213 L856.5,200 L876,204 L895.5,188 L915,194 L934.5,179 L954,171 L973.5,176 L993,160 L1012.5,152 L1032,158 L1051.5,140 L1071,128 L1090.5,133 L1110,112 L1129.5,96 L1129.5,252 L720,252 Z" fill="url(#fill)"/>
   <polyline points="720,232 739.5,226 759,230 778.5,218 798,222 817.5,209 837,213 856.5,200 876,204 895.5,188 915,194 934.5,179 954,171 973.5,176 993,160 1012.5,152 1032,158 1051.5,140 1071,128 1090.5,133 1110,112 1129.5,96" fill="none" stroke="#D2A75C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="1129.5" cy="96" r="12" fill="#D2A75C" fill-opacity="0.2"/>
   <circle cx="1129.5" cy="96" r="5.5" fill="#D2A75C"/>
-  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Helvetica Neue', Helvetica, Arial, sans-serif">
     <text x="72" y="130" font-size="60" font-weight="700" letter-spacing="-1" fill="#F3ECDF">Alexander Xiong</text>
     <text x="74" y="180" font-size="26" font-weight="500" fill="#D2A75C">I build AI products end to end.</text>
     <text x="74" y="224" font-size="19" fill="#A39A8A">Agent  ·  Backend  ·  Web  ·  iOS  ·  Android  ·  Ops</text>

@@ -1,7 +1,9 @@
+<p align="right"><b>English</b> · <a href="./README.zh-CN.md">简体中文</a></p>
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg">
-  <img alt="Alexander Xiong. Software engineer, AI and financial markets." src="./assets/banner-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-en-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/banner-en-light.svg">
+  <img alt="Alexander Xiong. I build AI products end to end." src="./assets/banner-en-light.svg">
 </picture>
 
 <p align="center">
