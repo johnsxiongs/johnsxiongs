@@ -109,20 +109,27 @@ def icon(icon_id, theme):
 
 
 def stack(lang, theme, icons):
-    size, gap, row_gap, left = 48, 12, 14, 120
-    width = left + max(len(row) for *_, row in STACK) * (size + gap) - gap
-    height = len(STACK) * (size + row_gap) - row_gap
+    per_row, tile, column, caption, row_gap, group_gap, left = 6, 44, 104, 22, 10, 24, 110
+    colors = THEMES[theme]
     names = ", ".join(name for *_, row in STACK for name, _ in row)
-    parts = []
-    for r, (en, zh, row) in enumerate(STACK):
-        y = r * (size + row_gap)
-        label = en if lang == "en" else zh
-        parts.append(f'<text x="0" y="{y + size / 2 + 5:g}" font-size="15" font-weight="600" '
-                     f'fill="{THEMES[theme]["muted"]}">{label}</text>')
-        for c, (_, icon_id) in enumerate(row):
-            data = base64.b64encode(icons[icon_id].encode()).decode()
-            parts.append(f'<image x="{left + c * (size + gap)}" y="{y}" width="{size}" height="{size}" '
-                         f'href="data:image/svg+xml;base64,{data}"/>')
+    parts, y = [], 0
+    for en, zh, items in STACK:
+        lines = -(-len(items) // per_row)
+        size = -(-len(items) // lines)
+        for i in range(lines):
+            if i == 0:
+                parts.append(f'<text x="0" y="{y + tile / 2 + 5:g}" font-size="15" font-weight="600" '
+                             f'fill="{colors["title"]}">{en if lang == "en" else zh}</text>')
+            for c, (name, icon_id) in enumerate(items[i * size:(i + 1) * size]):
+                center = left + c * column + column / 2
+                data = base64.b64encode(icons[icon_id].encode()).decode()
+                parts.append(f'<image x="{center - tile / 2:g}" y="{y}" width="{tile}" height="{tile}" '
+                             f'href="data:image/svg+xml;base64,{data}"/>')
+                parts.append(f'<text x="{center:g}" y="{y + tile + 16}" font-size="12" text-anchor="middle" '
+                             f'fill="{colors["muted"]}">{name}</text>')
+            y += tile + caption + row_gap
+        y += group_gap - row_gap
+    width, height = left + per_row * column, y - group_gap
     body = "\n  ".join(parts)
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
             f'viewBox="0 0 {width} {height}" role="img" aria-label="{names}">\n'
