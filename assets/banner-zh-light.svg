@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Alexander Xiong. 一个人，把 AI 产品从头做到尾。">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Alexander Xiong. 偏后端的全栈工程师">
   <defs>
     <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#8E6B36" stop-opacity="0.22"/>
@@ -13,7 +13,7 @@
   <circle cx="1129.5" cy="96" r="5.5" fill="#8E6B36"/>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Helvetica Neue', Helvetica, Arial, sans-serif">
     <text x="72" y="130" font-size="60" font-weight="700" letter-spacing="-1" fill="#1F1C17">Alexander Xiong</text>
-    <text x="74" y="180" font-size="26" font-weight="500" fill="#8E6B36">一个人，把 AI 产品从头做到尾。</text>
-    <text x="74" y="224" font-size="19" fill="#6E665A">Agent  ·  后端  ·  Web  ·  iOS  ·  Android  ·  运维</text>
+    <text x="74" y="180" font-size="26" font-weight="500" fill="#8E6B36">偏后端的全栈工程师</text>
+    <text x="74" y="224" font-size="19" fill="#6E665A">后端  ·  AI Agent  ·  数据  ·  运维  ·  网页  ·  移动端</text>
   </g>
 </svg>

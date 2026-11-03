@@ -18,10 +18,6 @@ STACK = [
         [("Python", "python"), ("TypeScript", "typescript"), ("Swift", "swift"), ("Kotlin", "kotlin"),
          ("Bash", "bash")],
     ]),
-    ("LLMs", "大模型", [
-        [("OpenAI", "chatgpt"), ("Claude", "claude"), ("Gemini", "gemini"), ("DeepSeek", "deepseek"),
-         ("Grok", "grok")],
-    ]),
     ("Backend", "后端", [
         [("LangChain", "langchain"), ("LangGraph", "si:langgraph"), ("MCP", "mcp"), ("FastAPI", "fastapi"),
          ("Django", "django"), ("Flask", "flask")],
@@ -29,6 +25,16 @@ STACK = [
          ("SQLModel", "url:https://raw.githubusercontent.com/fastapi/sqlmodel/main/docs/img/icon.svg"),
          ("Pydantic", "pydantic"), ("pandas", "pandas"), ("NumPy", "numpy")],
         [("Temporal", "si:temporal"), ("Supabase", "supabase"), ("Stripe", "stripe"), ("Firebase", "firebase")],
+    ]),
+    ("LLMs", "大模型", [
+        [("OpenAI", "chatgpt"), ("Claude", "claude"), ("Gemini", "gemini"), ("DeepSeek", "deepseek"),
+         ("Grok", "grok")],
+    ]),
+    ("Infra", "运维", [
+        [("Docker", "docker"), ("Nginx", "nginx"), ("Traefik", "si:traefikproxy"),
+         ("GitHub Actions", "githubactions"), ("Prometheus", "prometheus"), ("Grafana", "grafana")],
+        [("Google Cloud", "gcp"), ("Cloudflare", "cloudflare"), ("Tailscale", "tailscale"), ("Ubuntu", "ubuntu"),
+         ("uv", "si:uv")],
     ]),
     ("Web", "网页", [
         [("Vue", "vuejs"), ("Nuxt", "nuxtjs"), ("Pinia", "pinia"), ("Vuex", "vuejs"), ("HTML", "html"),
@@ -41,12 +47,6 @@ STACK = [
         [("iOS", "apple"), ("Xcode", "xcode"), ("Android", "android"), ("Jetpack Compose", "jetpackcompose"),
          ("Gradle", "gradle"), ("RevenueCat", "si:revenuecat")],
     ]),
-    ("Infra", "运维", [
-        [("Docker", "docker"), ("Nginx", "nginx"), ("Traefik", "si:traefikproxy"),
-         ("GitHub Actions", "githubactions"), ("Prometheus", "prometheus"), ("Grafana", "grafana")],
-        [("Google Cloud", "gcp"), ("Cloudflare", "cloudflare"), ("Tailscale", "tailscale"), ("Ubuntu", "ubuntu"),
-         ("uv", "si:uv")],
-    ]),
 ]
 
 # Helvetica advance widths per 1000 em; they match Arial, which GitHub's sans-serif stack falls back to.
@@ -57,8 +57,8 @@ GLYPH = {" ": 278, ".": 278, "-": 333, "f": 278, "i": 222, "j": 222, "l": 222, "
 UPPER = 667
 
 TEXT = {
-    "en": ("I build AI products end to end.", "Agent  ·  Backend  ·  Web  ·  iOS  ·  Android  ·  Ops"),
-    "zh": ("一个人，把 AI 产品从头做到尾。", "Agent  ·  后端  ·  Web  ·  iOS  ·  Android  ·  运维"),
+    "en": ("Full-stack engineer with a backend focus", "Backend  ·  AI agents  ·  Data  ·  Infra  ·  Web  ·  Mobile"),
+    "zh": ("偏后端的全栈工程师", "后端  ·  AI Agent  ·  数据  ·  运维  ·  网页  ·  移动端"),
 }
 
 THEMES = {
