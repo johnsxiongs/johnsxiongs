@@ -12,17 +12,17 @@
 
 ### 👋 关于我
 
-做一个 AI 产品，通常要一个团队：有人负责模型，有人写后端，还要网页、iOS 和安卓开发，再加一个凌晨三点被告警叫醒的人。[Quant AI](https://aiquant.io) 是面向投资者的 AI 研究助手，它的这个团队就是我一个人。
+我是新加坡的一名全栈工程师，专注 AI 产品。从 AI Agent、后端、网页，到 iOS 和安卓应用，再到背后的服务器，我可以一个人把产品从想法做到上线。
 
-从 2025 年 4 月起，我独自开发和运营它。它已经在网页和 App Store 上线，真实的投资者用它研究股票、加密货币和大宗商品。
+2025 年 4 月起，我独立开发和运营 [Quant AI](https://aiquant.io)，这是一款面向投资者的 AI 研究助手。它已在网页和 App Store 上线，投资者用它研究股票、加密货币和大宗商品。
 
-### 💡 我能带来什么
+### 💡 我擅长什么
 
-- 🤖 **能上生产的 AI Agent，不是演示。** 一段对话可以从美股聊到 A 股再聊到加密货币，上下文不丢。回答边生成边显示，随时可以停下；记忆跨会话保留；主模型出错时，备用模型自动接上。
-- 📈 **量化研究者的怀疑精神。** Agent 给约 200 只美股打分。评分要能预测之后的超额收益、t 值达到 2，我才保留这套评级模型；几次选对了不算数。
-- 📱 **每一块屏幕。** iPhone、iPad 和 Mac 上是原生 SwiftUI，安卓上是 Jetpack Compose，网页用 Nuxt。
-- 🚦 **让我睡得着觉的运维。** 打一个 git 标签就能发布；出了问题，看板和告警比用户先告诉我。
-- 🧑‍✈️ **一支 AI 代理团队。** 我写 Issue，Claude Code 代理写代码、跑检查，通过独立审查后才上线。我的时间花在设计和决策上。
+- 🤖 **AI Agent**：开发能在生产环境稳定运行的 AI Agent，支持跨市场的多轮对话、流式回答和长期记忆，主模型出错时自动切换到备用模型。
+- 📈 **量化研究**：搭建了覆盖约 200 只美股的评级系统，并用真实的市场收益做统计检验，让判断建立在数据上，而不是几次碰巧选对。
+- 📱 **网页和移动端**：开发 iPhone、iPad、Mac 和安卓的原生应用以及网页应用，全部支持 16 种语言。
+- ⚙️ **运维**：独立运维生产环境，包括自动化发布、监控和告警。
+- 🧑‍💻 **AI 辅助开发**：搭建了由 AI 编程代理完成实现、测试和审查的开发流程，让一个人也能维护这种规模的产品。
 
 ### 🛠️ 技术栈
 
@@ -32,21 +32,10 @@
   <img alt="技术栈: Python, TypeScript, Swift, Kotlin, Bash, OpenAI, Claude, Gemini, DeepSeek, Grok, LangChain, LangGraph, MCP, FastAPI, Django, Flask, PostgreSQL, Redis, SQLAlchemy, SQLModel, Pydantic, pandas, NumPy, Temporal, Supabase, Stripe, Firebase, Vue, Nuxt, Pinia, Vuex, HTML, CSS, Vite, Node.js, Yarn, Tailwind CSS, Element UI, Ant Design Vue, ECharts, G2Plot, iOS, Xcode, Android, Jetpack Compose, Gradle, RevenueCat, Docker, Nginx, Traefik, GitHub Actions, Prometheus, Grafana, Google Cloud, Cloudflare, Tailscale, Ubuntu, uv" src="./assets/stack-zh-light.svg">
 </picture>
 
-### 📊 数字
+### 🧭 做事原则
 
-<table>
-  <tr>
-    <td align="center" width="25%"><h3>1</h3>人的团队</td>
-    <td align="center" width="25%"><h3>5</h3>个平台</td>
-    <td align="center" width="25%"><h3>16</h3>种界面语言</td>
-    <td align="center" width="25%"><h3>8,500+</h3>次提交，19 个月</td>
-  </tr>
-</table>
-
-### 🧭 我怎样做事
-
-- **简单胜过聪明。** 我的标准是 rsync：只做一件事，做好，不多一点。宁可删掉一层，也不去解释它。
-- **先看日志，再看代码。** 系统实际做了什么，比代码看起来会做什么更可信。
-- **修根因。** 如果修复办法是加一个 try/except，说明我还没找到 bug。
-- **先用朴素的官方做法。** 先用标准工具和文档里的做法，除非我能写清楚为什么不用。
-- **把决定写下来。** 70 多份架构决策记录，下一个接手的人或代理不用猜。
+- **保持简单**：选择能解决问题的最简单设计，删掉不再需要的代码。
+- **解决根因**：找到问题的源头再修，不掩盖表面症状。
+- **以实际结果为准**：看日志和真实运行结果，确认无误才算完成。
+- **优先用成熟方案**：先用官方工具和业界通行做法，有明确理由才自己开发。
+- **记录决策**：把关键技术决策写成文档，方便别人快速接手。

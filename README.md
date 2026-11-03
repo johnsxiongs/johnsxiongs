@@ -12,17 +12,17 @@
 
 ### 👋 About me
 
-Most AI products need a team: someone for the model, someone for the backend, a web developer, an iOS developer, an Android developer, and someone to get paged at 3 a.m. For [Quant AI](https://aiquant.io), an AI research assistant for investors, that team is me.
+I'm a full-stack engineer in Singapore, focused on AI products. I can take a product from idea to launch on my own: the AI agent, the backend, the web app, the iOS and Android apps, and the infrastructure that runs them.
 
-I've built and run it on my own since April 2025. It's live on the web and the App Store, and real investors use it to research stocks, crypto and commodities.
+Since April 2025 I've built and run [Quant AI](https://aiquant.io), an AI research assistant for investors, by myself. It is live on the web and the App Store, and investors use it to research stocks, crypto and commodities.
 
-### 💡 What I bring
+### 💡 What I do
 
-- 🤖 **AI agents built for production, not demos.** One conversation can move from US stocks to A-shares to crypto without losing context. Answers stream in and can be stopped mid-sentence, memory carries across sessions, and a backup model takes over when the main one fails.
-- 📈 **A quant's skepticism.** The agent rates about 200 US stocks. I keep the rating model only if its scores predict later excess returns at t ≥ 2, not because a few picks went well.
-- 📱 **Every screen.** Native SwiftUI on iPhone, iPad and Mac, Jetpack Compose on Android, and Nuxt on the web.
-- 🚦 **Ops I can sleep through.** A git tag ships a release; dashboards and alerts tell me about a problem before users do.
-- 🧑‍✈️ **A team of AI agents.** I write the issue. Claude Code agents write the code, run the checks and pass an independent review before anything ships. My time goes to design and decisions.
+- 🤖 **AI agents.** I build agents that work reliably in production: multi-turn conversations across markets, streaming answers, long-term memory, and automatic fallback when a model fails.
+- 📈 **Quant research.** I built a rating system for about 200 US stocks and test it against real market returns, so decisions rest on statistics rather than a few lucky picks.
+- 📱 **Web and mobile.** I build native apps for iPhone, iPad, Mac and Android, plus the web app, all in 16 languages.
+- ⚙️ **Infrastructure.** I run production myself, including automated releases, monitoring and alerts.
+- 🧑‍💻 **AI-assisted development.** I set up a workflow where AI coding agents implement, test and review changes, which lets one person maintain a product of this size.
 
 ### 🛠️ Tech stack
 
@@ -32,21 +32,10 @@ I've built and run it on my own since April 2025. It's live on the web and the A
   <img alt="Tech stack: Python, TypeScript, Swift, Kotlin, Bash, OpenAI, Claude, Gemini, DeepSeek, Grok, LangChain, LangGraph, MCP, FastAPI, Django, Flask, PostgreSQL, Redis, SQLAlchemy, SQLModel, Pydantic, pandas, NumPy, Temporal, Supabase, Stripe, Firebase, Vue, Nuxt, Pinia, Vuex, HTML, CSS, Vite, Node.js, Yarn, Tailwind CSS, Element UI, Ant Design Vue, ECharts, G2Plot, iOS, Xcode, Android, Jetpack Compose, Gradle, RevenueCat, Docker, Nginx, Traefik, GitHub Actions, Prometheus, Grafana, Google Cloud, Cloudflare, Tailscale, Ubuntu, uv" src="./assets/stack-en-light.svg">
 </picture>
 
-### 📊 By the numbers
-
-<table>
-  <tr>
-    <td align="center" width="25%"><h3>1</h3>person on the team</td>
-    <td align="center" width="25%"><h3>5</h3>platforms built</td>
-    <td align="center" width="25%"><h3>16</h3>languages supported</td>
-    <td align="center" width="25%"><h3>8,500+</h3>commits in 19 months</td>
-  </tr>
-</table>
-
 ### 🧭 How I work
 
-- **Simple beats clever.** My bar is rsync: one job, done well, nothing extra. I'd rather delete a layer than explain it.
-- **Logs before code.** What the system actually did beats what the code seems to say.
-- **Fix the cause.** If the fix is a try/except, I haven't found the bug yet.
-- **Boring and official first.** Standard tools and documented patterns, unless I can write down why not.
-- **Write it down.** 70+ decision records, so the next person, or agent, doesn't have to guess.
+- **Keep it simple.** I choose the simplest design that solves the problem and remove code that is no longer needed.
+- **Fix the root cause.** I trace a problem to its source instead of hiding the symptom.
+- **Trust real results.** I check logs and real behavior before I call something done.
+- **Use proven tools.** I start with official tools and common practice, and build my own only when there is a clear reason.
+- **Document decisions.** I write down key technical decisions so others can pick up the work quickly.
