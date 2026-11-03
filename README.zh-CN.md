@@ -27,12 +27,10 @@
 ### 🛠️ 技术栈
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,ts,swift,kotlin,fastapi,postgres,redis,supabase,vue,nuxtjs,tailwind,docker,githubactions,grafana,prometheus,cloudflare&perline=8&theme=dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,ts,swift,kotlin,fastapi,postgres,redis,supabase,vue,nuxtjs,tailwind,docker,githubactions,grafana,prometheus,cloudflare&perline=8&theme=light">
-  <img alt="Python, TypeScript, Swift, Kotlin, FastAPI, PostgreSQL, Redis, Supabase, Vue, Nuxt, Tailwind CSS, Docker, GitHub Actions, Grafana, Prometheus, Cloudflare" src="https://skillicons.dev/icons?i=py,ts,swift,kotlin,fastapi,postgres,redis,supabase,vue,nuxtjs,tailwind,docker,githubactions,grafana,prometheus,cloudflare&perline=8&theme=light">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-zh-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/stack-zh-light.svg">
+  <img alt="技术栈: Python, TypeScript, Swift, Kotlin, Bash, LangChain, LangGraph, OpenAI, Claude, MCP, FastAPI, Pydantic, SQLAlchemy, PostgreSQL, Redis, Temporal, Supabase, Stripe, Firebase, Vue, Nuxt, Pinia, Tailwind CSS, Vite, ECharts, Node.js, Yarn, Apple, Xcode, Android, Jetpack Compose, Gradle, RevenueCat, Docker, Traefik, GitHub Actions, Prometheus, Grafana, Cloudflare, Tailscale, Google Cloud, Ubuntu, uv" src="./assets/stack-zh-light.svg">
 </picture>
-
-另有 LangChain · LangGraph · OpenAI Responses API · Temporal · Stripe · RevenueCat
 
 ### 📊 数字
 
