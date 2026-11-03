@@ -10,7 +10,7 @@ ROOT = ASSETS.parent
 
 # 846 px is the profile README column on github.com, so every image shows at its natural size.
 # All cards share this width, inner padding, radius and gap so their edges and text line up.
-WIDTH, PAD, RADIUS, GAP = 846, 36, 16, 16
+WIDTH, PAD, RADIUS, GAP = 846, 36, 16, 22
 
 SKILL_ICON = "https://raw.githubusercontent.com/LelouchFR/skill-icons/main/assets/{}.svg"
 SIMPLE_ICON = "https://cdn.simpleicons.org/{}"
@@ -62,7 +62,7 @@ COPY = {
         switch=("zh", "./README.zh-CN.md"),
         tagline="Full-stack engineer with a backend focus",
         domains="Backend  ·  AI agents  ·  Data  ·  Infra  ·  Web  ·  Mobile",
-        status="Open to backend and full-stack roles",
+        status="Building Quant AI",
         location="Singapore",
         about=("About", [
             "I'm a full-stack engineer in Singapore with a backend focus. Most of my work is the part users "
@@ -102,7 +102,7 @@ COPY = {
         switch=("en", "https://github.com/johnsxiongs"),
         tagline="偏后端的全栈工程师",
         domains="后端  ·  AI Agent  ·  数据  ·  运维  ·  网页  ·  移动端",
-        status="寻找后端或全栈岗位",
+        status="正在开发 Quant AI",
         location="新加坡",
         about=("关于我", [
             "我是新加坡的一名全栈工程师，偏后端。我的主要工作在用户看不到的部分：接口、数据、后台任务和运行它们的服务器。"
@@ -168,7 +168,7 @@ def width(text, size, bold=False):
     return units * size / 1000 * (1.08 if bold else 1)
 
 
-def wrap(text, size, limit):
+def greedy(text, size, limit):
     lines, line = [], ""
     for token in re.findall(rf"[{CJK}]|[^\s{CJK}]+|\s+", text):
         if not line and token.isspace():
@@ -179,6 +179,26 @@ def wrap(text, size, limit):
         else:
             line += token
     return lines + [line.rstrip()]
+
+
+def wrap(text, size, limit, pretty=False):
+    """Greedy line breaks; `pretty` keeps a word or two from sitting alone on the last line."""
+    lines = greedy(text, size, limit)
+    if pretty and len(lines) == 2:
+        low, high = limit / 2, limit
+        while high - low > 0.5:
+            middle = (low + high) / 2
+            low, high = (low, middle) if len(greedy(text, size, middle)) == 2 else (middle, high)
+        lines = greedy(text, size, high)
+    elif pretty and len(lines) > 2:
+        for narrower in range(int(limit), int(limit * 0.8), -2):
+            if width(lines[-1], size) >= limit / 3:
+                break
+            candidate = greedy(text, size, narrower)
+            if len(candidate) != len(lines):
+                break
+            lines = candidate
+    return lines
 
 
 def text(x, y, content, size, fill, weight=None, spacing=None, pin=False):
@@ -293,7 +313,7 @@ def skills(c, t, ui):
         heights = []
         for k, (icon_name, title, desc) in enumerate(items[row:row + 2]):
             x = PAD + k * (column + column_gap)
-            lines = wrap(desc, 13.5, column - offset)
+            lines = wrap(desc, 13.5, column - offset, pretty=True)
             inner += [rect(x, y - 2, tile, tile, 10, t["soft"]), line_icon(ui[icon_name], x + 8, y + 6, 20, t["accent"]),
                       text(x + offset, y + 15, title, 15, t["title"], 600)]
             inner += [text(x + offset, y + 38 + n * 21, line, 13.5, t["body"], pin=True) for n, line in enumerate(lines)]
@@ -330,11 +350,11 @@ def principles(c, t):
     desc_x = PAD + number_w + title_w
     inner, y, items = [], 53, c["principles"][1]
     for i, (title, desc) in enumerate(items):
-        lines = wrap(desc, 14, WIDTH - PAD - desc_x)
+        lines = wrap(desc, 13.5, WIDTH - PAD - desc_x, pretty=True)
         base = y + 29
         inner += [text(PAD, base, f"{i + 1:02d}", 13, t["accent"], 700),
                   text(PAD + number_w, base, title, 14.5, t["title"], 600)]
-        inner += [text(desc_x, base + n * line_h, line, 14, t["body"], pin=True) for n, line in enumerate(lines)]
+        inner += [text(desc_x, base + n * line_h, line, 13.5, t["body"], pin=True) for n, line in enumerate(lines)]
         y = base + (len(lines) - 1) * line_h + 19
         if i < len(items) - 1:
             inner.append(f'<line x1="{PAD}" y1="{y}" x2="{WIDTH - PAD}" y2="{y}" stroke="{t["border"]}"/>')

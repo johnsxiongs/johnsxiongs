@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="846" height="1531" viewBox="0 0 846 1531" role="img" aria-label="About. I&#x27;m a full-stack engineer in Singapore with a backend focus. Most of my work is the part users don&#x27;t see: APIs, data, background jobs and the servers they run on. I also build the web and mobile apps, so I can take an AI product from idea to launch on my own. Since April 2025 I&#x27;ve built and run Quant AI, an AI research assistant for investors, by myself. It is live on the web and the App Store, and investors use it to research stocks, crypto and commodities. What I do. Backend: I build services in Python and FastAPI on PostgreSQL and Redis, run scheduled jobs on Temporal, and handle payments, sign-in and push notifications. AI agents: I build agents that work reliably in production: multi-turn conversations across markets, streaming answers, long-term memory, and automatic fallback when a model fails. Quant research: I built a rating system for about 200 US stocks and test it against real market returns, so decisions rest on statistics rather than a few lucky picks. Infrastructure: I run production myself, including automated releases, monitoring and alerts. Web and mobile: I build native apps for iPhone, iPad, Mac and Android, plus the web app, all in 16 languages. AI-assisted development: I set up a workflow where AI coding agents implement, test and review changes, which lets one person maintain a product of this size. Tech stack: Python, TypeScript, Swift, Kotlin, Bash, LangChain, LangGraph, MCP, FastAPI, Django, Flask, PostgreSQL, Redis, SQLAlchemy, SQLModel, Pydantic, pandas, NumPy, Temporal, Supabase, Stripe, Firebase, OpenAI, Claude, Gemini, DeepSeek, Grok, Docker, Nginx, Traefik, GitHub Actions, Prometheus, Grafana, Google Cloud, Cloudflare, Tailscale, Ubuntu, uv, Vue, Nuxt, Pinia, Vuex, HTML, CSS, Vite, Node.js, Yarn, Tailwind CSS, Element UI, Ant Design Vue, ECharts, G2Plot, iOS, Xcode, Android, Jetpack Compose, Gradle, RevenueCat. How I work. Keep it simple: I choose the simplest design that solves the problem and remove code that is no longer needed. Fix the root cause: I trace a problem to its source instead of hiding the symptom. Trust real results: I check logs and real behavior before I call something done. Use proven tools: I start with official tools and common practice, and build my own only when there is a clear reason. Document decisions: I write down key technical decisions so others can pick up the work quickly.">
+<svg xmlns="http://www.w3.org/2000/svg" width="846" height="1549" viewBox="0 0 846 1549" role="img" aria-label="About. I&#x27;m a full-stack engineer in Singapore with a backend focus. Most of my work is the part users don&#x27;t see: APIs, data, background jobs and the servers they run on. I also build the web and mobile apps, so I can take an AI product from idea to launch on my own. Since April 2025 I&#x27;ve built and run Quant AI, an AI research assistant for investors, by myself. It is live on the web and the App Store, and investors use it to research stocks, crypto and commodities. What I do. Backend: I build services in Python and FastAPI on PostgreSQL and Redis, run scheduled jobs on Temporal, and handle payments, sign-in and push notifications. AI agents: I build agents that work reliably in production: multi-turn conversations across markets, streaming answers, long-term memory, and automatic fallback when a model fails. Quant research: I built a rating system for about 200 US stocks and test it against real market returns, so decisions rest on statistics rather than a few lucky picks. Infrastructure: I run production myself, including automated releases, monitoring and alerts. Web and mobile: I build native apps for iPhone, iPad, Mac and Android, plus the web app, all in 16 languages. AI-assisted development: I set up a workflow where AI coding agents implement, test and review changes, which lets one person maintain a product of this size. Tech stack: Python, TypeScript, Swift, Kotlin, Bash, LangChain, LangGraph, MCP, FastAPI, Django, Flask, PostgreSQL, Redis, SQLAlchemy, SQLModel, Pydantic, pandas, NumPy, Temporal, Supabase, Stripe, Firebase, OpenAI, Claude, Gemini, DeepSeek, Grok, Docker, Nginx, Traefik, GitHub Actions, Prometheus, Grafana, Google Cloud, Cloudflare, Tailscale, Ubuntu, uv, Vue, Nuxt, Pinia, Vuex, HTML, CSS, Vite, Node.js, Yarn, Tailwind CSS, Element UI, Ant Design Vue, ECharts, G2Plot, iOS, Xcode, Android, Jetpack Compose, Gradle, RevenueCat. How I work. Keep it simple: I choose the simplest design that solves the problem and remove code that is no longer needed. Fix the root cause: I trace a problem to its source instead of hiding the symptom. Trust real results: I check logs and real behavior before I call something done. Use proven tools: I start with official tools and common practice, and build my own only when there is a clear reason. Document decisions: I write down key technical decisions so others can pick up the work quickly.">
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Helvetica Neue', Helvetica, Arial, sans-serif">
   <g transform="translate(0 0)">
   <rect x="0.5" y="0.5" width="845" height="230" rx="16" fill="#FBF8F2" stroke="#E9E0CF"/>
@@ -9,7 +9,7 @@
   <text x="36" y="167" font-size="15" fill="#4A443A" textLength="749.0" lengthAdjust="spacingAndGlyphs">Since April 2025 I&#x27;ve built and run Quant AI, an AI research assistant for investors, by myself. It is live on the web</text>
   <text x="36" y="192" font-size="15" fill="#4A443A" textLength="555.3" lengthAdjust="spacingAndGlyphs">and the App Store, and investors use it to research stocks, crypto and commodities.</text>
   </g>
-  <g transform="translate(0 247)">
+  <g transform="translate(0 253)">
   <rect x="0.5" y="0.5" width="845" height="436" rx="16" fill="#FBF8F2" stroke="#E9E0CF"/>
   <text x="36" y="44" font-size="12" fill="#8E6B36" font-weight="700" letter-spacing="1.6">WHAT I DO</text>
   <rect x="36" y="65" width="36" height="36" rx="10" fill="#F1E6D2"/>
@@ -17,8 +17,8 @@
   <text x="86" y="82" font-size="15" fill="#1F1C17" font-weight="600">Backend</text>
   <text x="86" y="105" font-size="13.5" fill="#4A443A" textLength="246.1" lengthAdjust="spacingAndGlyphs">I build services in Python and FastAPI on</text>
   <text x="86" y="126" font-size="13.5" fill="#4A443A" textLength="277.6" lengthAdjust="spacingAndGlyphs">PostgreSQL and Redis, run scheduled jobs on</text>
-  <text x="86" y="147" font-size="13.5" fill="#4A443A" textLength="300.1" lengthAdjust="spacingAndGlyphs">Temporal, and handle payments, sign-in and push</text>
-  <text x="86" y="168" font-size="13.5" fill="#4A443A" textLength="75.0" lengthAdjust="spacingAndGlyphs">notifications.</text>
+  <text x="86" y="147" font-size="13.5" fill="#4A443A" textLength="267.1" lengthAdjust="spacingAndGlyphs">Temporal, and handle payments, sign-in and</text>
+  <text x="86" y="168" font-size="13.5" fill="#4A443A" textLength="108.1" lengthAdjust="spacingAndGlyphs">push notifications.</text>
   <rect x="437" y="65" width="36" height="36" rx="10" fill="#F1E6D2"/>
   <svg x="445" y="73" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8E6B36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8" /> <rect width="16" height="12" x="4" y="8" rx="2" /> <path d="M2 14h2" /> <path d="M20 14h2" /> <path d="M15 13v2" /> <path d="M9 13v2" /></svg>
   <text x="487" y="82" font-size="15" fill="#1F1C17" font-weight="600">AI agents</text>
@@ -35,13 +35,13 @@
   <rect x="437" y="201" width="36" height="36" rx="10" fill="#F1E6D2"/>
   <svg x="445" y="209" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8E6B36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10.852 19.772-.383.924" /> <path d="m13.148 14.228.383-.923" /> <path d="M13.148 19.772a3 3 0 1 0-2.296-5.544l-.383-.923" /> <path d="m13.53 20.696-.382-.924a3 3 0 1 1-2.296-5.544" /> <path d="m14.772 15.852.923-.383" /> <path d="m14.772 18.148.923.383" /> <path d="M4.2 15.1a7 7 0 1 1 9.93-9.858A7 7 0 0 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.2" /> <path d="m9.228 15.852-.923-.383" /> <path d="m9.228 18.148-.923.383" /></svg>
   <text x="487" y="218" font-size="15" fill="#1F1C17" font-weight="600">Infrastructure</text>
-  <text x="487" y="241" font-size="13.5" fill="#4A443A" textLength="264.9" lengthAdjust="spacingAndGlyphs">I run production myself, including automated</text>
-  <text x="487" y="262" font-size="13.5" fill="#4A443A" textLength="188.3" lengthAdjust="spacingAndGlyphs">releases, monitoring and alerts.</text>
+  <text x="487" y="241" font-size="13.5" fill="#4A443A" textLength="197.3" lengthAdjust="spacingAndGlyphs">I run production myself, including</text>
+  <text x="487" y="262" font-size="13.5" fill="#4A443A" textLength="255.9" lengthAdjust="spacingAndGlyphs">automated releases, monitoring and alerts.</text>
   <rect x="36" y="316" width="36" height="36" rx="10" fill="#F1E6D2"/>
   <svg x="44" y="324" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8E6B36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8" /> <path d="M10 19v-3.96 3.15" /> <path d="M7 19h5" /> <rect width="6" height="10" x="16" y="12" rx="2" /></svg>
   <text x="86" y="333" font-size="15" fill="#1F1C17" font-weight="600">Web and mobile</text>
-  <text x="86" y="356" font-size="13.5" fill="#4A443A" textLength="321.9" lengthAdjust="spacingAndGlyphs">I build native apps for iPhone, iPad, Mac and Android,</text>
-  <text x="86" y="377" font-size="13.5" fill="#4A443A" textLength="225.9" lengthAdjust="spacingAndGlyphs">plus the web app, all in 16 languages.</text>
+  <text x="86" y="356" font-size="13.5" fill="#4A443A" textLength="267.9" lengthAdjust="spacingAndGlyphs">I build native apps for iPhone, iPad, Mac and</text>
+  <text x="86" y="377" font-size="13.5" fill="#4A443A" textLength="279.9" lengthAdjust="spacingAndGlyphs">Android, plus the web app, all in 16 languages.</text>
   <rect x="437" y="316" width="36" height="36" rx="10" fill="#F1E6D2"/>
   <svg x="445" y="324" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8E6B36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3" /> <circle cx="6" cy="6" r="3" /> <path d="M13 6h3a2 2 0 0 1 2 2v7" /> <line x1="6" x2="6" y1="9" y2="21" /></svg>
   <text x="487" y="333" font-size="15" fill="#1F1C17" font-weight="600">AI-assisted development</text>
@@ -49,7 +49,7 @@
   <text x="487" y="377" font-size="13.5" fill="#4A443A" textLength="308.4" lengthAdjust="spacingAndGlyphs">implement, test and review changes, which lets one</text>
   <text x="487" y="398" font-size="13.5" fill="#4A443A" textLength="227.4" lengthAdjust="spacingAndGlyphs">person maintain a product of this size.</text>
   </g>
-  <g transform="translate(0 700)">
+  <g transform="translate(0 712)">
   <rect x="0.5" y="0.5" width="845" height="457" rx="16" fill="#FBF8F2" stroke="#E9E0CF"/>
   <text x="36" y="44" font-size="12" fill="#8E6B36" font-weight="700" letter-spacing="1.6">TECH STACK</text>
   <text x="36" y="82.5" font-size="13" fill="#1F1C17" font-weight="600">Languages</text>
@@ -233,30 +233,30 @@
   <image x="576.8" y="405" width="18" height="18" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIHJ4PSI2MCIgZmlsbD0iI0Y0RjJFRCIvPjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU2IDU2KSBzY2FsZSg2KSIgZmlsbD0iI0YyNTQ1QiIgZD0iTTQuMzAzNi4zOTk5Yy0xLjUyNDYgMC0zLjIxMjkuMTUwOC00LjMwMy40MTM2djE0Ljk5OTdjLjMwODMuMTcyMi44NDMyLjI4IDEuNTYzMi4yOC43NDA0IDAgMS4yNTUzLS4xMDcyIDEuNTQzMy0uMjh2LTUuMjMyM2ExNC44NTg4IDE0Ljg1ODggMCAwIDAgMi4xMjEuMTUxMmguMzI5NGwyLjg2MDQgNS4wNTg4Yy40MzIuMTk1IDEuMDI4OC4zMDI0IDEuOTM0OC4zMDI0LjgwMzMgMCAxLjM4LS4xMTA0IDEuNjQ3Ni0uMzAyNGwtMy40MzctNS44MzU4YzEuNDE5NS0uODAwNCAyLjMyNi0yLjI2OTggMi4zMjYtNC40OTY0QzEwLjg4OTQgMS44MjcgOC40MjMyLjQgNC4zMDM3LjR6bTE1LjQ1NDMgMGMtMS4zNzg4IDAtMi42MjQuMjcwNy0zLjY5MDEuNzk0NS0yLjQ1NTIgMS4yMDMtMy45NjA5IDMuNzM3Ni0zLjk2MDkgNy4zNjI3IDAgNC44MjQ1IDIuNjU1MiA3LjcxNTUgNy4xNjU5IDcuNzE1NS45IDAgMS41ODY4LS4zMDE0IDIuMDA1LjI1NTQuNDE5NC41NTY4LS4zNTgyIDEuMjE2NS0uNzc0NiAxLjUxMDUtMS42MzM4IDEuMTU0NC01LjcyMTctLjEwMjQtOS40OTA4LS40ODA0QzUuNTk5NCAxNy4wMTUuOTI2NCAxNi4zMDA5LjE0NiAxOS4xOTI4Yy0uNDEwNCAxLjUyNjQuMTIyNSAyLjUwMTMuNjQyMSAzLjA1MDMgMS4wNDQgMS4xMDQ2IDIuODgyIDEuMzU3IDQuMzQ0IDEuMzU3YTEzLjk1OSAxMy45NTkgMCAwIDAgMi4wNTA4LS4xNTU4IDEuMzExIDEuMzExIDAgMCAwIDEuMDIzLS44MDYzYy4xNjc0LS40MjU0LjA4NjEtLjkwNC0uMjEyLTEuMjU2MmExLjM0NjQgMS4zNDY0IDAgMCAwLTEuMjM1Mi0uNDUyM2MtMS41MDEyLjI3MDYtMy42MjEzLjg2ODUtNC40MzQzLjAxMDUtLjI3NDgtLjI5MS0uMjI2OC0xLjAwMzcgMC0xLjIyNTcuNjA0OC0uODc0OCA0LjQ5My0uNTM5MyA4LjQxMjctLjAyOTMgNC4zMjkuNDM0NCA4LjQwMjMgMS44NjA5IDEwLjk0NS42MzUxLjk5NTUtLjQ4IDIuMzE4LTEuMTk0MSAyLjMxOC0zLjc5MmgtLjAwMTJjMC0xLjE0NzMtLjE0ODktMi4yNzQtLjQ0NzYtMy4zNzk3LTEuMzgxOC4xODcyLTIuNDc4My4yODU3LTMuMjg4My4yOTQxLTIuODQ1IDAtNC44NjktMS40NDg0LTQuODY5LTUuMDk2MyAwLTMuNjQ4IDIuMDQ2MS01LjE1NzMgNS4wMTc5LTUuMTU3MyAxLjIwMTEgMCAyLjEyOS4yNTEyIDMuMTQwNS43MzM2LjEwNjItLjkyMzQtLjEwNTgtMi4xNjA1LS41OTA2LTIuODUyMy0uNzgtLjQ2MDgtMi4wMDE0LS42NzAzLTMuMjAzOC0uNjcwM3pNNC41MSAzLjE4ODljMi4wNTc5IDAgMy4yMTA4LjcxMTEgMy4yMTA4IDIuNDQyMSAwIDEuNjgyNC0xLjA5MTIgMi4zNTU0LTIuODgxNiAyLjM1NTRhMTAuMjgzOCAxMC4yODM4IDAgMCAxLTEuNzcwNi0uMTUxMVYzLjMxNjZhNy43NzgyIDcuNzc4MiAwIDAgMSAxLjQ0MTMtLjEyNzd6Ii8+PC9zdmc+"/>
   <text x="600.8" y="418.5" font-size="12.5" fill="#4A443A" textLength="69.5" lengthAdjust="spacingAndGlyphs">RevenueCat</text>
   </g>
-  <g transform="translate(0 1174)">
+  <g transform="translate(0 1192)">
   <rect x="0.5" y="0.5" width="845" height="356" rx="16" fill="#FBF8F2" stroke="#E9E0CF"/>
   <text x="36" y="44" font-size="12" fill="#8E6B36" font-weight="700" letter-spacing="1.6">HOW I WORK</text>
   <text x="36" y="82" font-size="13" fill="#8E6B36" font-weight="700">01</text>
   <text x="76" y="82" font-size="14.5" fill="#1F1C17" font-weight="600">Keep it simple</text>
-  <text x="244" y="82" font-size="14" fill="#4A443A" textLength="540.8" lengthAdjust="spacingAndGlyphs">I choose the simplest design that solves the problem and remove code that is no longer</text>
-  <text x="244" y="104" font-size="14" fill="#4A443A" textLength="50.6" lengthAdjust="spacingAndGlyphs">needed.</text>
+  <text x="244" y="82" font-size="13.5" fill="#4A443A" textLength="261.1" lengthAdjust="spacingAndGlyphs">I choose the simplest design that solves the</text>
+  <text x="244" y="104" font-size="13.5" fill="#4A443A" textLength="309.2" lengthAdjust="spacingAndGlyphs">problem and remove code that is no longer needed.</text>
   <line x1="36" y1="123" x2="810" y2="123" stroke="#E9E0CF"/>
   <text x="36" y="152" font-size="13" fill="#8E6B36" font-weight="700">02</text>
   <text x="76" y="152" font-size="14.5" fill="#1F1C17" font-weight="600">Fix the root cause</text>
-  <text x="244" y="152" font-size="14" fill="#4A443A" textLength="378.2" lengthAdjust="spacingAndGlyphs">I trace a problem to its source instead of hiding the symptom.</text>
+  <text x="244" y="152" font-size="13.5" fill="#4A443A" textLength="364.7" lengthAdjust="spacingAndGlyphs">I trace a problem to its source instead of hiding the symptom.</text>
   <line x1="36" y1="171" x2="810" y2="171" stroke="#E9E0CF"/>
   <text x="36" y="200" font-size="13" fill="#8E6B36" font-weight="700">03</text>
   <text x="76" y="200" font-size="14.5" fill="#1F1C17" font-weight="600">Trust real results</text>
-  <text x="244" y="200" font-size="14" fill="#4A443A" textLength="369.6" lengthAdjust="spacingAndGlyphs">I check logs and real behavior before I call something done.</text>
+  <text x="244" y="200" font-size="13.5" fill="#4A443A" textLength="356.4" lengthAdjust="spacingAndGlyphs">I check logs and real behavior before I call something done.</text>
   <line x1="36" y1="219" x2="810" y2="219" stroke="#E9E0CF"/>
   <text x="36" y="248" font-size="13" fill="#8E6B36" font-weight="700">04</text>
   <text x="76" y="248" font-size="14.5" fill="#1F1C17" font-weight="600">Use proven tools</text>
-  <text x="244" y="248" font-size="14" fill="#4A443A" textLength="557.9" lengthAdjust="spacingAndGlyphs">I start with official tools and common practice, and build my own only when there is a clear</text>
-  <text x="244" y="270" font-size="14" fill="#4A443A" textLength="46.7" lengthAdjust="spacingAndGlyphs">reason.</text>
+  <text x="244" y="248" font-size="13.5" fill="#4A443A" textLength="298.6" lengthAdjust="spacingAndGlyphs">I start with official tools and common practice, and</text>
+  <text x="244" y="270" font-size="13.5" fill="#4A443A" textLength="284.4" lengthAdjust="spacingAndGlyphs">build my own only when there is a clear reason.</text>
   <line x1="36" y1="289" x2="810" y2="289" stroke="#E9E0CF"/>
   <text x="36" y="318" font-size="13" fill="#8E6B36" font-weight="700">05</text>
   <text x="76" y="318" font-size="14.5" fill="#1F1C17" font-weight="600">Document decisions</text>
-  <text x="244" y="318" font-size="14" fill="#4A443A" textLength="465.3" lengthAdjust="spacingAndGlyphs">I write down key technical decisions so others can pick up the work quickly.</text>
+  <text x="244" y="318" font-size="13.5" fill="#4A443A" textLength="448.7" lengthAdjust="spacingAndGlyphs">I write down key technical decisions so others can pick up the work quickly.</text>
   </g>
   </g>
 </svg>
