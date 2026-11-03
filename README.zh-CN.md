@@ -29,7 +29,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-zh-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/stack-zh-light.svg">
-  <img alt="技术栈: Python, TypeScript, Swift, Kotlin, Bash, LangChain, LangGraph, OpenAI, Claude, MCP, FastAPI, Pydantic, SQLAlchemy, PostgreSQL, Redis, Temporal, Supabase, Stripe, Firebase, Vue, Nuxt, Pinia, Tailwind CSS, Vite, ECharts, Node.js, Yarn, Apple, Xcode, Android, Jetpack Compose, Gradle, RevenueCat, Docker, Traefik, GitHub Actions, Prometheus, Grafana, Cloudflare, Tailscale, Google Cloud, Ubuntu, uv" src="./assets/stack-zh-light.svg">
+  <img alt="技术栈: Python, TypeScript, Swift, Kotlin, Bash, OpenAI, Claude, Gemini, Grok, DeepSeek, MCP, LangChain, LangGraph, FastAPI, Flask, Django, Pydantic, SQLAlchemy, SQLModel, pandas, NumPy, PostgreSQL, Redis, Temporal, Supabase, Stripe, Firebase, HTML, CSS, Vue, Vuex, Pinia, Nuxt, Element UI, Ant Design Vue, Tailwind CSS, Vite, ECharts, G2Plot, Node.js, Yarn, iOS, Xcode, Android, Jetpack Compose, Gradle, RevenueCat, Docker, Nginx, Traefik, GitHub Actions, Prometheus, Grafana, Cloudflare, Tailscale, Google Cloud, Ubuntu, uv" src="./assets/stack-zh-light.svg">
 </picture>
 
 ### 📊 数字
