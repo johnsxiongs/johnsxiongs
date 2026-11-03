@@ -1,5 +1,4 @@
 import base64
-import functools
 import re
 import urllib.error
 import urllib.request
@@ -13,28 +12,41 @@ TILE_BG = {"light": "#F4F2ED", "dark": "#242938"}
 
 # Plain ids come from go-skill-icons; "si:" ids from Simple Icons; "url:" is the project's own logo.
 # go-skill-icons "element" is the Matrix chat app, so Element UI uses the logo from its own repo.
+# Each inner list is one line of related tools, most important first.
 STACK = [
-    ("Languages", "语言", [("Python", "python"), ("TypeScript", "typescript"), ("Swift", "swift"),
-                          ("Kotlin", "kotlin"), ("Bash", "bash")]),
-    ("AI", "AI", [("OpenAI", "chatgpt"), ("Claude", "claude"), ("Gemini", "gemini"), ("Grok", "grok"),
-                  ("DeepSeek", "deepseek"), ("MCP", "mcp")]),
+    ("Languages", "语言", [
+        [("Python", "python"), ("TypeScript", "typescript"), ("Swift", "swift"), ("Kotlin", "kotlin"),
+         ("Bash", "bash")],
+    ]),
+    ("LLMs", "大模型", [
+        [("OpenAI", "chatgpt"), ("Claude", "claude"), ("Gemini", "gemini"), ("DeepSeek", "deepseek"),
+         ("Grok", "grok")],
+    ]),
     ("Backend", "后端", [
-        ("LangChain", "langchain"), ("LangGraph", "si:langgraph"), ("FastAPI", "fastapi"), ("Flask", "flask"),
-        ("Django", "django"), ("Pydantic", "pydantic"), ("SQLAlchemy", "sqlalchemy"),
-        ("SQLModel", "url:https://raw.githubusercontent.com/fastapi/sqlmodel/main/docs/img/icon.svg"),
-        ("pandas", "pandas"), ("NumPy", "numpy"), ("PostgreSQL", "postgresql"), ("Redis", "redis"),
-        ("Temporal", "si:temporal"), ("Supabase", "supabase"), ("Stripe", "stripe"), ("Firebase", "firebase")]),
+        [("LangChain", "langchain"), ("LangGraph", "si:langgraph"), ("MCP", "mcp"), ("FastAPI", "fastapi"),
+         ("Django", "django"), ("Flask", "flask")],
+        [("PostgreSQL", "postgresql"), ("Redis", "redis"), ("SQLAlchemy", "sqlalchemy"),
+         ("SQLModel", "url:https://raw.githubusercontent.com/fastapi/sqlmodel/main/docs/img/icon.svg"),
+         ("Pydantic", "pydantic"), ("pandas", "pandas"), ("NumPy", "numpy")],
+        [("Temporal", "si:temporal"), ("Supabase", "supabase"), ("Stripe", "stripe"), ("Firebase", "firebase")],
+    ]),
     ("Web", "网页", [
-        ("HTML", "html"), ("CSS", "css"), ("Vue", "vuejs"), ("Vuex", "vuejs"), ("Pinia", "pinia"), ("Nuxt", "nuxtjs"),
-        ("Element UI", "url:https://raw.githubusercontent.com/ElemeFE/element/dev/examples/assets/images/element-logo-small.svg"),
-        ("Ant Design Vue", "antdesign"), ("Tailwind CSS", "tailwindcss"), ("Vite", "vite"),
-        ("ECharts", "si:apacheecharts"), ("G2Plot", "si:antv"), ("Node.js", "nodejs"), ("Yarn", "yarn")]),
-    ("Mobile", "移动端", [("iOS", "apple"), ("Xcode", "xcode"), ("Android", "android"),
-                         ("Jetpack Compose", "jetpackcompose"), ("Gradle", "gradle"), ("RevenueCat", "si:revenuecat")]),
-    ("Infra", "运维", [("Docker", "docker"), ("Nginx", "nginx"), ("Traefik", "si:traefikproxy"),
-                      ("GitHub Actions", "githubactions"), ("Prometheus", "prometheus"), ("Grafana", "grafana"),
-                      ("Cloudflare", "cloudflare"), ("Tailscale", "tailscale"), ("Google Cloud", "gcp"),
-                      ("Ubuntu", "ubuntu"), ("uv", "si:uv")]),
+        [("Vue", "vuejs"), ("Nuxt", "nuxtjs"), ("Pinia", "pinia"), ("Vuex", "vuejs"), ("HTML", "html"),
+         ("CSS", "css"), ("Vite", "vite"), ("Node.js", "nodejs"), ("Yarn", "yarn")],
+        [("Tailwind CSS", "tailwindcss"),
+         ("Element UI", "url:https://raw.githubusercontent.com/ElemeFE/element/dev/examples/assets/images/element-logo-small.svg"),
+         ("Ant Design Vue", "antdesign"), ("ECharts", "si:apacheecharts"), ("G2Plot", "si:antv")],
+    ]),
+    ("Mobile", "移动端", [
+        [("iOS", "apple"), ("Xcode", "xcode"), ("Android", "android"), ("Jetpack Compose", "jetpackcompose"),
+         ("Gradle", "gradle"), ("RevenueCat", "si:revenuecat")],
+    ]),
+    ("Infra", "运维", [
+        [("Docker", "docker"), ("Nginx", "nginx"), ("Traefik", "si:traefikproxy"),
+         ("GitHub Actions", "githubactions"), ("Prometheus", "prometheus"), ("Grafana", "grafana")],
+        [("Google Cloud", "gcp"), ("Cloudflare", "cloudflare"), ("Tailscale", "tailscale"), ("Ubuntu", "ubuntu"),
+         ("uv", "si:uv")],
+    ]),
 ]
 
 # Helvetica advance widths per 1000 em; they match Arial, which GitHub's sans-serif stack falls back to.
@@ -139,39 +151,22 @@ def text_width(text, size):
     return sum(GLYPH.get(ch, UPPER if ch.isupper() else 556) for ch in text) * size / 1000
 
 
-def split_lines(widths, room, gap):
-    """Fewest lines that fit `room`, with the widest line as narrow as possible."""
-    def span(i, j):
-        return sum(widths[i:j]) + gap * (j - i - 1)
-
-    @functools.cache
-    def best(i, k):
-        if k == 1:
-            return span(i, len(widths)), (len(widths),)
-        return min((max(span(i, j), best(j, k - 1)[0]), (j,) + best(j, k - 1)[1])
-                   for j in range(i + 1, len(widths) - k + 2))
-
-    k = 1
-    while best(0, k)[0] > room:
-        k += 1
-    return best(0, k)[1]
-
-
 def stack(lang, theme, icons):
     # 846 px is the profile README column on github.com, so the image shows at its natural size.
     width, left, chip_h, icon_size, font, gap, group_gap = 846, 84, 30, 20, 13, 6, 14
     colors = THEMES[theme]
-    names = ", ".join(name for *_, row in STACK for name, _ in row)
+    names = ", ".join(name for *_, lines in STACK for line in lines for name, _ in line)
     parts, y = [], 0
-    for en, zh, items in STACK:
-        texts = [round(text_width(name, font), 1) for name, _ in items]
-        chips = [round(6 + icon_size + 6 + text + 9, 1) for text in texts]
+    for en, zh, lines in STACK:
         parts.append(f'<text x="0" y="{y + 19.5:g}" font-size="14" font-weight="600" '
                      f'fill="{colors["title"]}">{en if lang == "en" else zh}</text>')
-        start = 0
-        for end in split_lines(chips, width - left, gap):
+        for line in lines:
             x = left
-            for (name, icon_id), text, chip in zip(items[start:end], texts[start:end], chips[start:end]):
+            for name, icon_id in line:
+                text = round(text_width(name, font), 1)
+                chip = round(6 + icon_size + 6 + text + 9, 1)
+                if x + chip > width:
+                    raise SystemExit(f"{en}: the line ending with {name} is wider than {width}px; split it in STACK")
                 data = base64.b64encode(icons[icon_id].encode()).decode()
                 # textLength pins each name to its Helvetica width, so other fonts cannot overflow the chip.
                 parts.append(f'<rect x="{x:g}" y="{y}" width="{chip:g}" height="{chip_h}" rx="8" '
@@ -182,7 +177,6 @@ def stack(lang, theme, icons):
                              f'textLength="{text:g}" lengthAdjust="spacingAndGlyphs" '
                              f'fill="{colors["chip_text"]}">{name}</text>')
                 x = round(x + chip + gap, 1)
-            start = end
             y += chip_h + gap
         y += group_gap - gap
     height = y - group_gap
@@ -193,7 +187,7 @@ def stack(lang, theme, icons):
 
 
 for theme, colors in THEMES.items():
-    icons = {icon_id: icon(icon_id, theme) for *_, row in STACK for _, icon_id in row}
+    icons = {icon_id: icon(icon_id, theme) for *_, lines in STACK for line in lines for _, icon_id in line}
     for lang, (tagline, skills) in TEXT.items():
         (OUT / f"banner-{lang}-{theme}.svg").write_text(banner(tagline, skills, colors))
         (OUT / f"stack-{lang}-{theme}.svg").write_text(stack(lang, theme, icons))

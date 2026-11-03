@@ -29,7 +29,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-zh-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/stack-zh-light.svg">
-  <img alt="技术栈: Python, TypeScript, Swift, Kotlin, Bash, OpenAI, Claude, Gemini, Grok, DeepSeek, MCP, LangChain, LangGraph, FastAPI, Flask, Django, Pydantic, SQLAlchemy, SQLModel, pandas, NumPy, PostgreSQL, Redis, Temporal, Supabase, Stripe, Firebase, HTML, CSS, Vue, Vuex, Pinia, Nuxt, Element UI, Ant Design Vue, Tailwind CSS, Vite, ECharts, G2Plot, Node.js, Yarn, iOS, Xcode, Android, Jetpack Compose, Gradle, RevenueCat, Docker, Nginx, Traefik, GitHub Actions, Prometheus, Grafana, Cloudflare, Tailscale, Google Cloud, Ubuntu, uv" src="./assets/stack-zh-light.svg">
+  <img alt="技术栈: Python, TypeScript, Swift, Kotlin, Bash, OpenAI, Claude, Gemini, DeepSeek, Grok, LangChain, LangGraph, MCP, FastAPI, Django, Flask, PostgreSQL, Redis, SQLAlchemy, SQLModel, Pydantic, pandas, NumPy, Temporal, Supabase, Stripe, Firebase, Vue, Nuxt, Pinia, Vuex, HTML, CSS, Vite, Node.js, Yarn, Tailwind CSS, Element UI, Ant Design Vue, ECharts, G2Plot, iOS, Xcode, Android, Jetpack Compose, Gradle, RevenueCat, Docker, Nginx, Traefik, GitHub Actions, Prometheus, Grafana, Google Cloud, Cloudflare, Tailscale, Ubuntu, uv" src="./assets/stack-zh-light.svg">
 </picture>
 
 ### 📊 数字
